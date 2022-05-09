@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/destyle.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&family=M+PLUS+1p:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/func.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+  <div id="demoslide01" class="main_visual bg_aaa">
+    <a data-target="modal1" class="modal_open"></a>
+  </div>
+
+
+  <!-- モーダル1 -->
+  <div id="modal1" class="modal_box">
+    <h2 class="title">はじめまして！</h2>
+    <div class="modal-content">
+      <h3 class="pc"><img src="image/pc1.png" alt=""></h3>
+      <h3 class="sp"><img src="image/sp1.png" alt=""></h3>
+      <p class="hukidasi">あたし、まやい！<br>よろしくね</p>
+    </div>
+
+    <h4 class="sub2">今日からまやいは、あなた専用の電話番！</h4>
+
+    <div class="link_area">
+      <a data-target="modal2" class="modal_switch"><span>次へ</span></a>
+    </div>
+
+  </div>
+
+  <!-- モーダル2 -->
+  <div id="modal2" class="modal_box">
+    <h2 class="title">3ステップで完了！<br class="sp">まやいが電話番するための準備だよ</h2>
+
+    <div class="modal-content">
+
+      <form action="">
+        <label for="company">名乗りはどうする？</label>
+        <input id="company" type="text" placeholder="株式会社まやい">
+        <p>電話に出た時に名乗る名前だよ</p>
+
+
+        <label for="mail">どこにお知らせする？</label>
+
+        <div>
+
+          <select id="mail" name="mail">
+            <option value="">メール</option>
+            <option value="1">Slack</option>
+          </select>
+        </div>
+        <p>電話の用件をメールかチャットで送るよ</p>
+
+      </form>
+    </div>
+    <h4 class="sub2">どちらも「設定」から変更できるよ</h4>
+    <div class="link_area">
+      <ul>
+        <li class="modal_link"><a data-target="modal2-2" class="modal_switch"><span>次へ</span></a></li>
+        <li class="modal_link"><a data-target="modal1" class="modal_switch2"><span>ひとつ前に戻る</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- モーダル2-2 -->
+  <div id="modal2-2" class="modal_box">
+    <h2 class="title">通知先のメールアドレスを設定します</h2>
+
+    <div class="modal-content">
+
+      <form action="">
+        <label for="mail1">転送先メールアドレス</label>
+        <input id="mail1" type="text" placeholder="MayaiLove@mayai.com">
+        <label for="mail2">転送先メールアドレス</label>
+        <input id="mail2" type="text" placeholder="MayaiLove@mayai.com">
+        <label for="mail3">転送先メールアドレス</label>
+        <input id="mail3" type="text" placeholder="MayaiLove@mayai.com">
+
+        <p>3つまで設定できるよ</p>
+
+      </form>
+    </div>
+    <h4 class="sub2">どちらも「設定」から変更できるよ</h4>
+    <div class="link_area">
+      <ul>
+        <li class="modal_link"><a data-target="modal2-3" class="modal_switch"><span>次へ</span></a></li>
+        <li class="modal_link"><a data-target="modal2" class="modal_switch2"><span>ひとつ前に戻る</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- モーダル2-3 -->
+  <div id="modal2-3" class="modal_box">
+    <h2 class="title">通知先のSlackアカウントを<br class="sp">設定します</h2>
+
+    <div class="modal-content">
+
+      <h3 class="pc"><img src="image/pc2-3.png" alt=""></h3>
+      <h3 class="sp"><img src="image/sp2-2.png" alt=""></h3>
+      <p class="hukidasi">連携するよ</p>
+    </div>
+    <h4 class="sub2">どちらも「設定」から変更できるよ</h4>
+    <div class="link_area">
+      <ul>
+        <li class="modal_link"><a data-target="modal3" class="modal_switch"><span>次へ</span></a></li>
+        <li class="modal_link"><a data-target="modal2-2" class="modal_switch2"><span>ひとつ前に戻る</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- モーダル3 -->
+  <div id="modal3" class="modal_box">
+    <h2 class="title">プラン詳細</h2>
+    <div class="modal-content">
+      <div class="price-list">
+
+        <ul>
+          <li>
+            <h3><span><img src="image/egg.png" alt=""></span>スターター</h3>
+            <div class="flex">
+              <div class="left">
+                <h4><span class="¥">¥</span><span class="price">0</span></h4>
+                <p class="correspondence">月〜金<span>9-18</span>時対応</p>
+                <p class="number">受電数<span>20</span>件</p>
+              </div>
+              <div class="right">
+                <ul>
+                  <li>従量料金<span>50円</span></li>
+                  <li>応答内容の変更<span>-</span></li>
+                  <li>迷惑電話を登録<span>-</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="catch">とにかく安く</p>
+          </li>
+          <li>
+            <h3><span><img src="image/pdding.png" alt=""></span>スタンダード</h3>
+            <div class="flex">
+              <div class="left">
+                <h4><span class="¥">¥</span><span class="price">500</span>税別/月</h4>
+                <p class="correspondence"><span>365</span>日<span>24</span>時間対応</p>
+                <p class="number">受電数<span>50</span>件</p>
+              </div>
+              <div class="right">
+                <ul>
+                  <li>従量料金<span>50円</span></li>
+                  <li>応答内容の変更<span>-</span></li>
+                  <li>迷惑電話を登録<span>-</span></li>
+                </ul>
+              </div>
+
+            </div>
+            <p class="catch">24時間対応</p>
+          </li>
+          <li>
+            <h3><span><img src="image/palfe.png" alt=""></span>ビジネス</h3>
+            <div class="flex">
+              <div class="left">
+                <h4><span class="¥">¥</span><span class="price">9,800</span>税別/月</h4>
+                <p class="correspondence"><span>365</span>日<span>24</span>時間対応</p>
+                <p class="number">受電数<span>150</span>件</p>
+              </div>
+              <div class="right">
+                <ul>
+                  <li>従量料金<span>50円</span></li>
+                  <li>応答内容の変更<span>◯</span></li>
+                  <li>迷惑電話を登録<span>◯</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="catch">応答内容を自由に設定</p>
+          </li>
+        </ul>
+        <p class="more pc">詳細を見る</p>
+        <div class="pc pc-list">
+          <ul>
+            <li>
+              <ul>
+                <li>従量料金<span>50円</span></li>
+                <li>応答内容の変更<span>-</span></li>
+                <li>迷惑電話を登録<span>-</span></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                  <li>従量料金<span>50円</span></li>
+                  <li>応答内容の変更<span>-</span></li>
+                  <li>迷惑電話を登録<span>-</span></li>
+                </ul>
+            </li>
+            <li>
+              <ul>
+                  <li>従量料金<span>50円</span></li>
+                  <li>応答内容の変更<span>◯</span></li>
+                  <li>迷惑電話を登録<span>◯</span></li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <p class="popular">一番人気</p>
+      <form action="">
+        <ul>
+          <li>
+          
+              <input id="radio1" class="radiobutton" name="check" type="radio" value="ラジオボタン1" data-target="modal4" class="modal_switch">
+              <label for="radio1">選択する</label>
+          </li>
+          <li>
+          
+              <input id="radio2" class="radiobutton" name="check" type="radio" value="ラジオボタン2" data-target="modal4" class="modal_switch">
+              <label for="radio2">選択する</label>
+          </li>
+          <li>
+          
+              <input id="radio3" class="radiobutton" name="check" type="radio" value="ラジオボタン3" class="modal_switch">
+              <label for="radio3">選択する</label>
+          </li>
+        </ul>
+
+      </form>
+
+    </div>
+    <h4 class="sub2">いつでも「設定」から変更できるよ</h4>
+    <div class="link_area">
+      <ul>
+        <li class="modal_link"><a data-target="modal4" class="modal_switch"><span>次へ</span></a></li>
+        <li class="modal_link"><a data-target="modal2" class="modal_switch2"><span>ひとつ前に戻る</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- モーダル4 -->
+  <div id="modal4" class="modal_box">
+    <h2 class="title">お支払い情報を登録してね</h2>
+    <h3 class="sub">2週間のトライアル期間は無料で使えるよ<br>
+      その後も継続して使う場合はカードの登録をしてね</h3>
+    <div class="modal-content">
+
+      <p class="hukidasi pc">これで最後だよ<br>がんばって！</p>
+      <form action="">
+        <h4 class="pc"><img src="image/pc3.png" alt=""></h4>
+        <label for="card">カード番号</label>
+        <input id="card" type="text" placeholder="1234-5678-9012">
+        <label for="deadline">期限</label>
+        <div class="flex">
+
+          <div>
+
+            <select id="deadline" name="month">
+              <option value="" class="place">月</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div>
+            <select name="year">
+              <option value="" class="place">年</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+            </select>
+          </div>
+        </div>
+        <label for="name">カード名義</label>
+        <input id="name" type="text" placeholder="Mayai">
+        <label for="security">セキュリティーコード</label>
+        <input id="security" type="text" placeholder="半角英字のみ">
+      </form>
+    </div>
+
+    <h4 class="sub2">あとから「アカウント」で登録・変更できるよ</h4>
+
+
+    <div class="link_area">
+      <ul>
+        <div>
+          <li class="modal_link"><a data-target="modal5" class="modal_switch"><span>次へ</span></a></li>
+          <li class="modal_link"><a data-target="modal5" class="modal_switch"><span>スキップ</span></a></li>
+        </div>
+        <li class="modal_link"><a data-target="modal3" class="modal_switch2"><span>ひとつ前に戻る</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- モーダル5 -->
+  <div id="modal5" class="modal_box">
+    <h2 class="title">試しに電話をかけてみよう</h2>
+    <div class="modal-content">
+      <div class="tel">
+        <h4>まやいが応答する電話番号だよ<br>
+※スターターは平日9-18時のみ応答</h4>
+        <p>050-1234-5678</p>
+      </div>
+      <h5>ホームページなど好きな場所で公開してね</h5>
+    </div>
+
+    <h4 class="sub2">既に持っている番号でまやいを使う場合は、<br>
+その番号からまやいの050番号に転送設定してね</h4>
+    <div class="link_area">
+      <ul>
+        <li class="modal_link"><a data-target="modal6" class="modal_switch"><span>電話完了</span></a></li>
+        <li class="modal_link"><a data-target="modal4" class="modal_switch2"><span>ひとつ前に戻る</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- モーダル6 -->
+  <div id="modal6" class="modal_box">
+    <h2 class="title">設定完了！</h2>
+    <div class="modal-content">
+      <h4 class="pc"><img src="image/pc5.png" alt=""></h4>
+      <h4 class="sp"><img src="image/sp6.png" alt=""></h4>
+      <p class="hukidasi">まやい、<br>電話番はじめるね</p>
+      <h5>今日からあなたも、まやいの「保護者」です</h5>
+    </div>
+    <h4 class="sub2">まだまだ成長中ですが、仲良くしてあげてくださいね</h4>
+    <div class="link_area">
+      <p class="modal_link"><a class="modal_close2"><span>完了</span></a></p>
+    </div>
+
+  </div>
+</body>
